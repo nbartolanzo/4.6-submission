@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: white; 
+}
+
+body {   /*selects is for body, adjusting font, margin and background */
+	/*font-size: 100%; changes font size for body */
+	/*margin-left: 1.5em;  creates space in left margin */
+	/*margin-right: 1.5em;  creates space in right margin */
+	background-color: #afe0df;
+	width: /*1000px; for class purposes of 4/2, conversion to %*/ 90%;
+	/*padding: 20%;*/
+	margin: 0 auto;
+	border: 1px solid black;
+	
+}
+
+/* styles for the header */
+header{   /*type selector */
+	text-align: center;    /*2/21 due to sizing issue */
+	border: 2px solid black;  
+}
+aside{
+	float: right;
+	width: /* 345px; (345/1000)*100= 34.5)*/ 34.5%; 
+}
+
+main{
+	float: left;
+	width: /*645px; (645/1000)*100= 64.5) */ 64.5%;	
+}
+
+aside img {
+	width: 100%;
+}
+
+
+h1, h2{    /* multiple selector */
+	color: navy;  /* background color */
+}
+
+main>p {  /*child selector */
+	font-size: 125%;  /* font size changes of main paragraph */
+	
+}
+Main li {  /*descendant select */
+	font-size: 125%; /* changes the font size of the lists */
+	list-style-type: square; /* bullet points become squares */
+}
+
+.large {   /*class selector */
+	font-size: 200%; /* font for the website link is bigger */
+	
+}
+
+a:link {    /* psuedo selector */
+	color: red; /* when clicking the links, they turn red */
+	
+}
+
+a:hover, a:focus {   /* psuedo selector */
+	color: purple;  /*when hovering over links, they turn purple */
+	
+}
+/* styles for the footer*/
+
+#copyright{  /*id selector */
+		text-align: right; /* moves copyright to right */
+		clear: both;
+}
+
+/* this is to adjust certain settings with what we learned in class on 4/2; adjusts the settings if the screen size is a certain size */
+
+
+
+@media only screen (max-width:768px) {
+	aside { float: none;
+	}
+	main { float: none;
+	}
+	
+}
+
+@media only screen (max-width:375px){
+	aside { float: none;
+	}
+	main { float: none;
+	}
+}
